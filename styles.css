@@ -1,0 +1,82 @@
+body {
+    background-color: black;
+    color: orange;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    border: 2px solid orange;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 80%;
+    max-width: 600px;
+    overflow: hidden;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.section {
+    margin: 20px 0;
+    border: 1px solid orange;
+    border-radius: 5px;
+    padding: 15px;
+    background-color: rgba(255, 165, 0, 0.1); /* легкий оранжевый фон для секций */
+}
+
+h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+p, li {
+    font-size: 1.2em;
+    margin: 5px 0;
+}
+
+footer {
+    margin-top: 20px;
+    font-size: 1em;
+}
+
+/* Анимация */
+.animated {
+    opacity: 0;
+    transform: translateY(-30px);
+    animation: slideIn 0.5s forwards;
+}
+
+@keyframes slideIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.section.animated {
+    animation-delay: 0.2s; /* Задержка для секций */
+}
+
+.section:nth-of-type(2) {
+    animation-delay: 0.4s; /* Задержка для "Обо мне" */
+}
+
+.section:nth-of-type(3) {
+    animation-delay: 0.6s; /* Задержка для "Навыки" */
+}
+
+.section:nth-of-type(4) {
+    animation-delay: 0.8s; /* Задержка для "Контакты" */
+}
+
